@@ -1,0 +1,55 @@
+package Stack;
+
+public class StackUsingLL {
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    public static class Stack {
+        public static Node head;
+        public static boolean isEmpty(){
+            return (head==null);
+        }
+        public static void push(int data){
+            Node newNode = new Node(data);
+            if (head==null){
+                head = newNode;
+                return;
+            }
+            newNode.next = head;
+            head = newNode;
+        }
+        public static int pop(){
+            if(head==null){
+                return -1;
+            }
+
+            int top = head.data;
+            head = head.next;
+            return top;
+        }
+        public static int peek(){
+            if(head==null){
+                return -1;
+            }
+            int top = head.data;
+            return top;
+        }
+    }
+    public static void main(String[] args) {
+        Stack S = new Stack();
+        S.push(1);
+        S.push(2);
+        S.push(3);
+
+        while (S.isEmpty() != true) {
+            System.out.println(S.peek());
+            S.pop();
+        }
+    }
+}
