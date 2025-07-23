@@ -66,7 +66,10 @@ public class linklist {
             return;
         }
         Node temp = head;
-        for(int i = 0; i<size-2;i++){
+//        for(int i = 0; i<size-2;i++){
+//            temp = temp.next;
+//        }
+        while(temp.next.next != null){
             temp = temp.next;
         }
         temp.next = null;

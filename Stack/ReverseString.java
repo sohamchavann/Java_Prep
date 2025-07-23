@@ -18,7 +18,7 @@ public class ReverseString {
         return result.toString();
     }
     public static void main(String[] args) {
-      String str = " Saloni";
+      String str = "Soham";
       String result = revString(str);
         System.out.println(result);
     }
