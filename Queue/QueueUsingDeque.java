@@ -5,14 +5,14 @@ import java.util.LinkedList;
 
 public class QueueUsingDeque {
     static class Queue{
-        static Deque<Integer> d = new LinkedList<>();
-        static void add(int data){
+        Deque<Integer> d = new LinkedList<>();
+        void add(int data){
             d.addLast(data);
         }
-        static int remove(){
+        int remove(){
             return d.removeFirst();
         }
-        static int peek(){
+        int peek(){
             return d.getFirst();
         }
     }
