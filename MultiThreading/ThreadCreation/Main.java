@@ -23,16 +23,16 @@ public class Main {
         System.out.println(Thread.currentThread().getState());
         System.out.println("Finished");
 
-        Runnable r1 = () -> {
-            for(int i =0;i<10;i++){
-                System.out.println("Thread is running");
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        };
+//        Runnable r1 = () -> {
+//            for(int i =0;i<10;i++){
+//                System.out.println("Thread is running");
+//                try {
+//                    Thread.sleep(500);
+//                } catch (InterruptedException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            }
+//        };
 //        Thread t1 = new Thread(() -> System.out.println("Thread is running"));
 //        t1.start();
     }

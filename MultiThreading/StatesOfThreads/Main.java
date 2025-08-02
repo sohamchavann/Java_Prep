@@ -18,7 +18,6 @@ public class Main {
         Thread t1 = new Thread();
         t1.start();
 
-
         try {
             System.out.println(Thread.currentThread().getState());
             t1.join();

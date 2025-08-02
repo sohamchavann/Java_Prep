@@ -5,9 +5,13 @@ public class DaemonThread extends Thread {
     public void run() {
         while (true) {
             System.out.println("Hello world! ");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
-
     public static void main(String[] args) {
         DaemonThread myThread = new DaemonThread();
         myThread.setDaemon(true); // myThread is daemon thread ( like Garbage collector ) now
