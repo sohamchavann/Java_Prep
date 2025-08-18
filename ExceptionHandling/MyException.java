@@ -1,4 +1,4 @@
-package OOPSBasicstoAdv.ExceptionHandling;
+package ExceptionHandling;
 
 public class MyException extends Exception{
     // custom exception
