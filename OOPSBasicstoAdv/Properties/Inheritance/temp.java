@@ -4,14 +4,14 @@ public class temp {
     public static void main(String[] args) {
         parent o1 = new child("Bhavesh", "Soham");
         o1.show(7);
-        o1.display();
+//        o1.display();
     }
 }
  class parent{
     void display(){
         System.out.println("display");
     }
-     void show(int a){
+      void show(int a){
         System.out.println("parent : " +a);
     }
      parent(String pname){
@@ -19,7 +19,7 @@ public class temp {
     }
 }
 class child extends parent{
-     void show(int a){
+      void show(int a){
          System.out.println("Child");
     }
     void display1(){
