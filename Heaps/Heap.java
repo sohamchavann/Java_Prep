@@ -30,7 +30,7 @@ public class Heap<T extends Comparable<T>> {
         upHeap(list.size()-1);
     }
     private void upHeap(int index){
-        if(index== 0) return;
+        if(index == 0) return;
         int parent = parent(index);
         if(list.get(index).compareTo(list.get(parent))<0){
             swap(index, parent);
