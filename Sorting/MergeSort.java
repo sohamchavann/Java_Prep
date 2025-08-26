@@ -13,7 +13,7 @@ public class MergeSort {
         System.out.println();
     }
     public static void mergeSort(int arr[], int si, int ei){
-        if(si>=ei){      //base
+        if(si>=ei){
             return;
         }
         int mid = si + (ei-si)/2; //(si+ei)/2

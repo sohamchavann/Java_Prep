@@ -29,7 +29,7 @@ public class validParenthesis  {
         return true;
     }
     public static void main(String[] args) {
-        String str = "(([{}]){}";
+        String str = "([{}]){}";
         System.out.println(soln(str));
     }
 }

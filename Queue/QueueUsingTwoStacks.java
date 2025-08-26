@@ -3,7 +3,7 @@ package Queue;
 import java.util.Stack;
 
 public class QueueUsingTwoStacks {
-    static class Queue {
+    static class Queue {//push(n) pop(1)
          Stack <Integer> s1 = new Stack<>();
          Stack <Integer> s2 = new Stack<>();
 
@@ -39,7 +39,7 @@ public class QueueUsingTwoStacks {
         }
     }
 
-    static class Queue1 {
+    static class Queue1 {//push o(1) pop(1) amortized o(n) in some cases
         static Stack<Integer> s1 = new Stack<>();
         static Stack<Integer> s2 = new Stack<>();
 
