@@ -33,7 +33,7 @@ class AgeCompare implements Comparator<Student>{
         return s2.age - s1.age;
     }
 }
-class Student {
+class Student implements Comparable<Student>{
     int age;
     String name;
 
@@ -42,10 +42,10 @@ class Student {
         this.name = name;
     }
 
-//    @Override
-//    public int compareTo(Student s1) {
-//        return this.age - s1.age;
-//    }
+    @Override
+    public int compareTo(Student s1) {
+        return this.age - s1.age;
+    }
 
     @Override
     public String toString() {

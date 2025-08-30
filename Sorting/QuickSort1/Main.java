@@ -31,11 +31,14 @@ public class Main {
     }
 
     static void qs(int[] arr, int low, int high) {
-        if (low < high) {
+        if (low>=high){
+            return;
+        }
+//        if (low < high) {
             int pIndex = partition(arr, low, high);
             qs(arr, low, pIndex - 1);
             qs(arr, pIndex + 1, high);
-        }
+//        }
     }
 
     public static int[] quickSort(int[] arr) {
